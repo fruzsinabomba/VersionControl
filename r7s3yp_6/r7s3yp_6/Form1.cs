@@ -29,6 +29,7 @@ namespace r7s3yp_6
             RefreshData();
             dataGridView1.DataSource = rates;
             comboBox1.DataSource = Currencies;
+
         }
 
         private void RefreshData()
@@ -95,6 +96,7 @@ namespace r7s3yp_6
                 chartArea.AxisY.MajorGrid.Enabled = false;
                 chartArea.AxisY.IsStartedFromZero = false;
             }
+           
 
         }
 

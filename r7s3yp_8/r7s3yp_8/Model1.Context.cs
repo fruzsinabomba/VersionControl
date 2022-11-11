@@ -13,10 +13,10 @@ namespace r7s3yp_8
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PortfolioEntities1 : DbContext
+    public partial class PortfolioEntities2 : DbContext
     {
-        public PortfolioEntities1()
-            : base("name=PortfolioEntities1")
+        public PortfolioEntities2()
+            : base("name=PortfolioEntities2")
         {
         }
     
@@ -25,6 +25,6 @@ namespace r7s3yp_8
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Tick> Tick { get; set; }
+        public virtual DbSet<Tick> Ticks { get; set; }
     }
 }

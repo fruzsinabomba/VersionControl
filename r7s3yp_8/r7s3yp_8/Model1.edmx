@@ -33,16 +33,16 @@
           <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="Volume" Type="Int32" />
         </EntityType>
-        <EntityContainer Name="PortfolioEntities1" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Tick" EntityType="Self.Tick" />
+        <EntityContainer Name="PortfolioEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Ticks" EntityType="Self.Tick" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="PortfolioModelStoreContainer" CdmEntityContainer="PortfolioEntities1">
-          <EntitySetMapping Name="Tick">
+        <EntityContainerMapping StorageEntityContainer="PortfolioModelStoreContainer" CdmEntityContainer="PortfolioEntities2">
+          <EntitySetMapping Name="Ticks">
             <EntityTypeMapping TypeName="PortfolioModel.Tick">
               <MappingFragment StoreEntitySet="Tick">
                 <ScalarProperty Name="Tick_id" ColumnName="Tick_id" />
@@ -67,7 +67,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

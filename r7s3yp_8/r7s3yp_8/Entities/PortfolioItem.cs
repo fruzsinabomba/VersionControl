@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace r7s3yp_8.Entities
 {
-    class PortfolioItem
+    public class PortfolioItem
     {
         public string Index { get; set; }
         public decimal Volume { get; set; }

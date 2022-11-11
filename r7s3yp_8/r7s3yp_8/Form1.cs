@@ -12,9 +12,14 @@ namespace r7s3yp_8
 {
     public partial class Form1 : Form
     {
+        PortfolioEntities1 context = new PortfolioEntities1();
+        List<Tick> Ticks;
+
         public Form1()
         {
             InitializeComponent();
+            Ticks = context.Tick.ToList();
+            dataGridView1.DataSource = Ticks;
         }
     }
 }

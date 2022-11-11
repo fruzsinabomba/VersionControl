@@ -13,10 +13,10 @@ namespace r7s3yp_8
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PortfolioEntities : DbContext
+    public partial class PortfolioEntities1 : DbContext
     {
-        public PortfolioEntities()
-            : base("name=PortfolioEntities")
+        public PortfolioEntities1()
+            : base("name=PortfolioEntities1")
         {
         }
     

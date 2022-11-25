@@ -12,6 +12,7 @@ namespace UnitTestExample.Test
         public void TestValidateEmail(string email, bool expectedResult)
         {
             var accountController = new AccountController();
+
             var actualResult = accountController.ValidateEmail(email);
             Assert.AreEqual(expectedResult, actualResult);
 

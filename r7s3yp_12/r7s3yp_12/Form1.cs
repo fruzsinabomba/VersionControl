@@ -1,4 +1,5 @@
-﻿using System;
+﻿using r7s3yp_12.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,18 @@ namespace r7s3yp_12
 {
     public partial class Form1 : Form
     {
+        List<Person> Population = new List<Person>();
+        List<BirthProbability> BirthProbabilities = new List<BirthProbability>();
+        List<DeathProbability> DeathProbabilities = new List<DeathProbability>();
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
